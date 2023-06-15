@@ -1,7 +1,9 @@
 #include <stdio.h>
+
 /**
- *main(void)-is the entry point
- *return- when it is 0 mean successful otherwise error occured
+ * main - Entry point
+ *
+ * Return: 0 if successful, otherwise an error occurred
  */
 int main(void)
 {

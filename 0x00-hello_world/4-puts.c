@@ -1,6 +1,6 @@
 #include <stdio.h>
 /**
- *main-is the entry point
+ *main(void)-is the entry point
  *return- when it is 0 mean successful otherwise error occured
  */
 int main(void)

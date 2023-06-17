@@ -11,6 +11,7 @@ int main(void)
 	while (n >= 97)
 	{
 		putchar(n);
+		n--;
 	}
 	putchar('\n');
 	return (0);

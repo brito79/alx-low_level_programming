@@ -16,7 +16,7 @@ int main(void)
 			continue;
 		putchar('0' + d);
 		putchar('0' + p);
-		if (d == '8' && p == '9')
+		if (!(d == '8' && p == '9'))
 			putchar(',');
 		putchar(' ');
 	}

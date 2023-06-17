@@ -6,22 +6,19 @@
  */
 int main(void)
 {
-	int d, p;
+	int i;
+	int j;
 
-	for (d = '0'; d <= '8'; d++)
+	for (i = 0; i < 10; i++)
 	{
-	for (p = d + 1; p <= '9'; p++)
-	{
-		if (p != d)
-			continue;
-		putchar('0' + d);
-		putchar('0' + p);
-		if (!(d == '8' && p == '9'))
+		for (j = i + 1; j < 10; j++)
+		{
+			putchar('0' + i);
+			putchar('0' + j);
 			putchar(',');
-		putchar(' ');
-	}
+			putchar(' ');
+		}
 	}
 	putchar('\n');
 	return (0);
 }
-

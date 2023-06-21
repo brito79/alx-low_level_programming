@@ -1,10 +1,10 @@
 #include <stdio.h>
 
 /**
- * print_fibonacci_sequence - Prints the Fibonacci to a given number.
+ * print_fibonacci_sequence - Prints the Fibonacci  to a given number.
  * @n: The number of Fibonacci numbers to print.
  *
- * The function calculates and prints sequence up to the given number.
+ * The function calculates and prints the Fibonacci to the given number.
  * The numbers are separated by commas and a space.
  * It does not use long long, malloc, pointers, arrays/tables, or structures.
  */

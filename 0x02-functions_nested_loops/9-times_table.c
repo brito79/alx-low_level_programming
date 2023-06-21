@@ -1,48 +1,33 @@
 #include "main.h"
 /**
-  * times_table - Constructing time table, starting with 0
-  * _putchar - Prints numbers
+  * times_table - Prints nine times,timetable starting with zero
   */
 
 void times_table(void)
 {
-	int s = 0, e = 9, count = 0;
+	int count, product;
 
-	while (count <= 9)
+	for (count = 0; count <= 9; count++)
 	{
-		while (s <= e)
+		for (product = 0; product <= 9; product++)
 		{
-			int product = count * s;
+			int result = count * product;
 
-			if (s != 0)
+			if (product != 0)
 			{
 				_putchar(',');
-				if (product < 10)
-				{
-					_putchar(' ');
-					_putchar(' ');
-				}
-				else
-				{
-					_putchar(' ');
-				}
-				if (product < 10)
-				{
-					_putchar(product + '0');
-				}
-				else
-				{
-					_putchar(product / 10 + '0');
-					_putchar(product % 10 + '0');
-				}
-				if (s == e)
-				{
-					_putchar('\n');
-				}
-				s++;
+				_putchar(' ');
 			}
-			s = 0;
-			count++;
+			if (result < 10)
+			{
+				_putchar(' ');
+			}
+			else
+			{
+				_putchar(result / 10 + '0');
+			}
+			_putchar(result % 10 + '0');
 		}
+		_putchar('\n');
 	}
 }

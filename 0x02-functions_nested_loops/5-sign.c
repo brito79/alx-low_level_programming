@@ -1,24 +1,26 @@
 #include "main.h"
+
 /**
- *main- Entry point
- *Return: Always 0 (indicating success)
- *Description-testing positive,negative or zero
+ * print_sign - Checks the sign of a number
+ * @n: The number to be tested
+ *
+ *Return: 1 when n > 0, -1 when n < 0, otherwise 0
  */
 int print_sign(int n)
 {
 	if (n > 0)
 	{
-		_putchar('43');
+		_putchar('+');
 		return (1);
 	}
 	else if (n < 0)
 	{
-		_putchar('45');
+		_putchar('-');
 		return (-1);
 	}
-	if (n == 0)
+	else
 	{
-		_putchar('48');
+		_putchar('0');
 		return (0);
 	}
 	_putchar('\n');

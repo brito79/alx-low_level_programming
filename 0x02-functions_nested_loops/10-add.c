@@ -1,10 +1,13 @@
 #include "main.h"
 /**
- *main- Entry point
- *Return: Always 0 (indicating success)
- *Description-testing positive,negative or zero
+ * add - Adding numbers
+ * @num1: First number
+ * @num2: Second number
+ *
+ *Return: Total
  */
-int add(int num1 + int  num2)
+
+int add(int num1,  int  num2)
 {
-	return(num1 + num2)
+	return (num1 + num2);
 }

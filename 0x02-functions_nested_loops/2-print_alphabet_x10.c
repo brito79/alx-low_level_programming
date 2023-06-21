@@ -1,8 +1,7 @@
 #include "main.h"
 /**
- *main- Entry point
- *Return: Always 0 (indicating success)
- *Description-testing positive,negative or zero
+ * print_alphabet_x10 - Prints alphabet ten times
+ * _putchar - Prints word by word
  */
 void print_alphabet_x10(void)
 {

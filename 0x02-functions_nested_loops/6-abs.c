@@ -1,9 +1,11 @@
 #include "main.h"
 /**
- *main- Entry point
- *Return: Always 0 (indicating success)
- *Description-testing positive,negative or zero
+ * _abs - Compute the absolute value
+ * @i: The number to be checked
+ *
+ * Return: The positive n Always
  */
+
 int _abs(int i)
 {
 	if (i >= 0)
@@ -12,7 +14,7 @@ int _abs(int i)
 	}
 	else
 	{
-		return(i *-1);
+		return (i * -1);
 	}
 }
 

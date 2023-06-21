@@ -1,16 +1,17 @@
 #include "main.h"
 /**
- *main- Entry point
- *Return: Always 0 (indicating success)
- *Description-testing positive,negative or zero
- */
+  * jack_bauer - Printing every minute ofthe day
+  *
+  * _putchar: Prints hours, minutes and seconds
+  */
+
 void jack_bauer(void)
 {
 	int f1, s2, t3, f4;
 
 	for (f1 = 0; f1 <= 2; f1++)
 	{
-		for (s2 = 0; b <= 9; s2++)
+		for (s2 = 0; s2 <= 9; s2++)
 		{
 			for (t3 = 0; t3 <= 9; t3++)
 			{

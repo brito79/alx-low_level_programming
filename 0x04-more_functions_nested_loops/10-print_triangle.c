@@ -2,25 +2,40 @@
 
 /**
  * print_triangle - Prints a triangle of '#' characters
- * @size: Number of rows in the triangle
+ * @size: Size of the triangle
  */
 void print_triangle(int size)
 {
-	int i, j, k;
+	int i, j;
 
-	for (i = 0; i < size; i++)
+	if (size <= 0)
+	{
+		_putchar('\n');
+		return;
+	}
+
+	for (i = 0; i < size - 1; i++)
 	{
 		for (j = 0; j < size - i - 1; j++)
 		{
 			_putchar(' ');
 		}
 
-		for (k = 0; k <= i; k++)
+		_putchar('#');
+
+		for (j = 0; j < i; j++)
 		{
 			_putchar('#');
 		}
 
 		_putchar('\n');
 	}
+
+	for (i = 0; i < size; i++)
+	{
+		_putchar('#');
+	}
+
+	_putchar('\n');
 }
 

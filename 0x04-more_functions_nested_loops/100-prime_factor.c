@@ -6,9 +6,9 @@
  *
  * Return: The largest prime factor
  */
-long largestPrimeFactor(long number)
+unsigned long largestPrimeFactor(unsigned long number)
 {
-	long factor = 2;
+	unsigned long factor = 2;
 
 	while (factor * factor <= number)
 	{
@@ -32,11 +32,10 @@ long largestPrimeFactor(long number)
  */
 int main(void)
 {
-	long number = 612852475143;
-	long largestPrime = largestPrimeFactor(number);
+	unsigned long number = 612852475143;
+	unsigned long largestPrime = largestPrimeFactor(number);
 
-	printf("The largest prime factor of %ld is %ld\n", number, largestPrime);
+	printf("%lu\n", largestPrime);
 
 	return (0);
 }
-

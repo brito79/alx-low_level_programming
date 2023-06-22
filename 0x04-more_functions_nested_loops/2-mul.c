@@ -9,21 +9,5 @@
  */
 int mul(int a, int b)
 {
-	int product = a * b;
-
-	return (product);
-}
-
-/**
- * main - Entry point
- *
- * Return: 0 on success
- */
-int main(void)
-{
-	int a = 2;
-	int b = 3;
-	int product = mul(a, b);
-
-	return (product);
+	return (a * b);
 }

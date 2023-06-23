@@ -1,40 +1,43 @@
 #include <stdio.h>
-#include <stdlib.h>
 
 /**
-* print_fibonacci - Prints the first n Fibonacci numbers
-* @n: The number of Fibonacci numbers to print
+* print_fibonacci - Prints the first 50 Fibonacci numbers
 */
-void print_fibonacci(int n)
+void print_fibonacci(void)
 {
-int *fib = malloc(n * sizeof(int));
+int fib[50];
 int i;
-
-if (fib == NULL) {
-printf("Memory allocation failed\n");
-return;
-}
 
 fib[0] = 1;
 fib[1] = 2;
 
-for (i = 2; i < n; i++)
+for (i = 2; i < 50; i++)
 {
 fib[i] = fib[i - 1] + fib[i - 2];
 }
 
-for (i = 0; i < n; i++)
+for (i = 0; i < 50; i++)
 {
 printf("%d", fib[i]);
 
-if (i != n - 1)
+if (i != 49)
 {
 printf(", ");
 }
 }
 
 printf("\n");
+}
 
-free(fib);
+/**
+* main - Entry point of the program
+*
+* Return: Always 0 (Success)
+*/
+int main(void)
+{
+print_fibonacci();
+
+return (0);
 }
 

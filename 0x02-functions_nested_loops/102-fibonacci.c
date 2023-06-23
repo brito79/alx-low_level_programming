@@ -1,39 +1,43 @@
 #include <stdio.h>
+
 /**
- * Generates the Fibonacci sequence up to the given number of terms and prints them.
-   Parameters:
- *  - n: The number of Fibonacci terms to generate and print.
+ * print_fibonacci - Prints the first n Fibonacci numbers
+ * @n: The number of Fibonacci numbers to print
  */
-
-void fibonacci_sequence(int n)
+void print_fibonacci(int n)
 {
-	int fib_seq[n];
+	int fib[n];
+	int i;
 
-	fib_seq[0] = 1;
-	fib_seq[1] = 2;
+	fib[0] = 1;
+	fib[1] = 2;
 
-	for (int i = 2; i < n; i++)
+	for (i = 2; i < n; i++)
 	{
-		fib_seq[i] = fib_seq[i - 1] + fib_seq[i - 2];
+		fib[i] = fib[i - 1] + fib[i - 2];
 	}
 
-	printf("%d", fib_seq[0]);
-	for (int i = 1; i < n; i++)
+	for (i = 0; i < n; i++)
 	{
-		printf(", %d", fib_seq[i]);
+		printf("%d", fib[i]);
+
+		if (i != n - 1)
+		{
+			printf(", ");
+		}
 	}
+
 	printf("\n");
 }
 
+/**
+ * main - Entry point of the program
+ *
+ * Return: 0 on success
+ */
 int main(void)
-	/**
-	  * main - Entry point
-	  *
-	  */
 {
-	int n = 50;
-
-	fibonacci_sequence(n);
+	print_fibonacci(50);
 
 	return (0);
 }

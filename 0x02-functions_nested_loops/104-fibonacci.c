@@ -1,47 +1,43 @@
 #include <stdio.h>
 
 /**
- * print_fibonacci_sequence - Prints the Fibonacci  to a given number.
- * @n: The number of Fibonacci numbers to print.
- *
- * The function calculates and prints the Fibonacci to the given number.
- * The numbers are separated by commas and a space.
- * It does not use long long, malloc, pointers, arrays/tables, or structures.
- */
+* print_fibonacci_sequence - Prints the Fibonacci  number.
+* @n: The number up to which the Fibonacci sequence is printed.
+*
+* The function calculates and prints the Fibonacci sequence up  number.
+* The numbers are separated by commas and a space.
+*/
 void print_fibonacci_sequence(int n)
 {
-	unsigned long current = 1, previous = 0, temp;
-	int count = 0;
+unsigned long prev = 1, curr = 2;
+unsigned long fib;
 
-	while (count < n)
-	{
-		if (count > 0)
-		{
-			printf(", ");
-		}
-		printf("%lu", current);
+printf("%lu, %lu", prev, curr);
 
-		temp = current;
-		current += previous;
-		previous = temp;
+while (curr <= n)
+{
+fib = prev + curr;
+printf(", %lu", fib);
 
-		count++;
-	}
-	printf("\n");
+prev = curr;
+curr = fib;
+}
+
+printf("\n");
 }
 
 /**
- * main - Entry point of the program.
- *
- * Calls the print_fibonacci_sequence function with the value 98
- * to print the first 98 Fibonacci numbers.
- *
- * Return: Always 0.
- */
+* main - Entry point of the program.
+*
+* Calls the print_fibonacci_sequence function value 4000000
+* to print the Fibonacci sequence up to 4,000,000.
+*
+* Return: 0 on success.
+*/
 int main(void)
 {
-	print_fibonacci_sequence(98);
+print_fibonacci_sequence(4000000);
 
-	return (0);
+return (0);
 }
 

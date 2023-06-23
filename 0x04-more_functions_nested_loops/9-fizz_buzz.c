@@ -1,13 +1,15 @@
 #include <stdio.h>
 
 /**
-* fizzbuzz - Implements the FizzBuzz logic and prints the sequence
+* main - Entry point
+*
+* Return: Always 0
 */
-void fizzbuzz(void)
+int main(void)
 {
 int i;
 
-for (i = 0; i <= 100; i++)
+for (i = 1; i <= 100; i++)
 {
 if (i % 3 == 0 && i % 5 == 0)
 {
@@ -25,18 +27,9 @@ else
 {
 printf("%d ", i);
 }
-printf("\n");
-}
 }
 
-/**
-* main - Entry point of the program
-*
-* Return: 0 on successful execution
-*/
-int main(void)
-{
-fizzbuzz();
+printf("\n");
 
 return (0);
 }

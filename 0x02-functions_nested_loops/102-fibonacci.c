@@ -1,4 +1,5 @@
 #include <stdio.h>
+#include <stdlib.h>
 
 /**
 * print_fibonacci - Prints the first n Fibonacci numbers
@@ -6,8 +7,13 @@
 */
 void print_fibonacci(int n)
 {
-int fib[n];
+int *fib = malloc(n * sizeof(int));
 int i;
+
+if (fib == NULL) {
+printf("Memory allocation failed\n");
+return;
+}
 
 fib[0] = 1;
 fib[1] = 2;
@@ -28,5 +34,7 @@ printf(", ");
 }
 
 printf("\n");
+
+free(fib);
 }
 

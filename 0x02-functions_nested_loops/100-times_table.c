@@ -1,41 +1,44 @@
 #include "main.h"
 
 /**
- * print_times_table - Prints the n times table, starting with 0.
- * @n: The number for which the times table is printed.
- *
- * If n is greater than 15 or less than 0, the function does nothing.
- */
+* print_times_table - Prints the n times table, starting with 0.
+* @n: The number for which the times table is printed.
+*
+* If n is greater than 15 or less than 0, the function does nothing.
+*/
 void print_times_table(int n)
 {
-	if (n > 15 || n < 0)
-	{
-		return;
-	}
+int num, mult, prod;
 
-	for (int i = 0; i <= 10; i++)
-	{
-		printf("%d x %d = %d\n", n, i, n * i);
-	}
-}
-
-/**
- * main - Entry point of the program.
- *
- * Prompts the user to enter a number between 0 and 15 and
- * calls the print_times_table function with the user's input as the argument.
- *
- * Return: Always 0.
- */
-int main(void)
+if (n >= 0 && n <= 15)
 {
-	int number;
+for (num = 0; num <= n; num++)
+{
+_putchar('0');
+for (mult = 1; mult <= n; mult++)
+{
+_putchar(',');
+_putchar(' ');
+prod = num * mult;
 
-	printf("Enter a number between 0 and 15: ");
-	scanf("%d", &number);
+if (prod <= 99)
+_putchar(' ');
+if (prod <= 9)
+_putchar(' ');
 
-	print_times_table(number);
-
-	return (0);
+if (prod >= 100)
+{
+_putchar((prod / 100) + '0');
+_putchar((prod / 10) % 10 + '0');
+}
+else if (prod <= 99 && prod >= 10)
+{
+_putchar((prod / 10) + '0');
+}
+_putchar((prod % 10) + '0');
+}
+_putchar('\n');
+}
+}
 }
 

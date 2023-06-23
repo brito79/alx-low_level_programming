@@ -24,7 +24,7 @@ prev = curr;
 curr = next;
 }
 
-printf("Sum of even-valued terms: %d\n", sum);
+printf("%d\n", sum);
 
 return (0);
 }

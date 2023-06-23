@@ -1,13 +1,13 @@
 #include <stdio.h>
 
 /**
-* print_fibonacci_sequence - Prints the Fibonacci  number.
+* print_fibonacci_sequence - Prints the Fibonacci  given number.
 * @n: The number up to which the Fibonacci sequence is printed.
 *
-* The function calculates and prints the Fibonacci sequence up  number.
+* The function calculates and prints the Fibonacci sequence given number.
 * The numbers are separated by commas and a space.
 */
-void print_fibonacci_sequence(int n)
+void print_fibonacci_sequence(unsigned long n)
 {
 unsigned long prev = 1, curr = 2;
 unsigned long fib;
@@ -29,7 +29,7 @@ printf("\n");
 /**
 * main - Entry point of the program.
 *
-* Calls the print_fibonacci_sequence function value 4000000
+* Calls the print_fibonacci the value 4000000
 * to print the Fibonacci sequence up to 4,000,000.
 *
 * Return: 0 on success.

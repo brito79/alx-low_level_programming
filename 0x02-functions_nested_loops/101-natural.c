@@ -15,15 +15,10 @@ int main(void)
 
 	for (i = 0; i < num; i++)
 	{
-		if (i % 3 == 0)
+		if (i % 3 == 0 || i % 5 == 0)
 		{
-			sum3 = sum3 + i;
+			sumT = sumT + i;
 		}
-		if (i % 5 == 0)
-		{
-			sum5 = sum5 + i;
-		}
-		sumT = sum3 + sum5;
 	}
 	printf("%d", sumT);
 	printf("\n");

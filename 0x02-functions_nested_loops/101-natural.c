@@ -1,0 +1,32 @@
+#include <stdio.h>
+/**
+  * main - Entry point
+  *
+  *Return: Always 0 (success)
+  */
+
+int main(void)
+{
+	int num = 1024;
+	int sumT = 0;
+	int sum5 = 0;
+	int sum3 = 0;
+	int i;
+
+	for (i = 0; i < 1024; i++)
+	{
+		if (i % 3 == 0)
+		{
+			sum3 = sum3 + i;
+		}
+		if (i % 5 == 0)
+		{
+			sum5 = sum5 + i;
+		}
+		sumT = sum3 + sum5;
+	}
+	printf("%d", sumT);
+	printf("\n");
+	return (0);
+}
+

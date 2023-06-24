@@ -9,17 +9,17 @@ int main(void)
 {
 unsigned long int term1 = 1;
 unsigned long int term2 = 2;
-unsigned long int fibn = 0;
-int i;
+unsigned long int fibn;
+int count;
 
 printf("%lu, %lu", term1, term2);
 
-for (i = 3; i <= 98; i++)
+for (count = 3; count <= 98; count++)
 {
 fibn = term1 + term2;
+printf(", %lu", fibn);
 term1 = term2;
 term2 = fibn;
-printf(", %lu", fibn);
 }
 
 printf("\n");

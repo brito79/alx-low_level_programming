@@ -9,8 +9,6 @@ int main(void)
 {
 	int num = 1024;
 	int sumT = 0;
-	int sum5 = 0;
-	int sum3 = 0;
 	int i;
 
 	for (i = 0; i < num; i++)

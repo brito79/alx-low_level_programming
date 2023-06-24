@@ -10,6 +10,7 @@ int i;
 
 fib[0] = 1;
 fib[1] = 2;
+printf("\n");
 
 for (i = 2; i < 50; i++)
 {

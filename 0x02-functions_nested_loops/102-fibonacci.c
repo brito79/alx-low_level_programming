@@ -13,12 +13,12 @@ long int fibn = 0;
 int i;
 int ln = 50;
 
-printf("%lld, %lld", term1, term2);
+printf("%ld, %ld", term1, term2);
 
 for (i = 3; i <= ln; i++)
 {
 fibn = term1 + term2;
-printf(", %lld", fibn);
+printf(", %ld", fibn);
 term1 = term2;
 term2 = fibn;
 }

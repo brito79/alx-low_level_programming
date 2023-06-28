@@ -7,9 +7,9 @@
 
 int main(void)
 {
-long long int term1 = 1;
-long long int term2 = 2;
-long long int fibn = 0;
+long int term1 = 1;
+long int term2 = 2;
+long int fibn = 0;
 int i;
 int ln = 50;
 

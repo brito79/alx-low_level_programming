@@ -29,6 +29,7 @@ printf("\n");
 *
 * Return: Always 0 (success).
 */
+void print_fibonacci(void);
 int main(void)
 {
 print_fibonacci();

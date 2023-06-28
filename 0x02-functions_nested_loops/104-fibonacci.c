@@ -7,14 +7,14 @@
 */
 int main(void)
 {
-unsigned long int term1 = 1;
-unsigned long int term2 = 2;
-unsigned long int fibn;
+long int term1 = 1;
+long int term2 = 2;
+long int fibn;
 int count;
 
 printf("%lu, %lu", term1, term2);
 
-for (count = 3; count <= 98; count++)
+for (count = 1; count <= 98; count++)
 {
 fibn = term1 + term2;
 printf(", %lu", fibn);

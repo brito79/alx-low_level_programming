@@ -1,39 +1,28 @@
 #include "main.h"
-
 /**
- * _strncat - Concatenates strings
- * @dest: The destination string
- * @src: The source string
- * @n: The maximum number of characters to concatenate
- *
- * Return: Pointer to the resulting concatenated string
- */
+  * *_strncat - Copies a string to dest
+  * @dest: The destination pointers
+  * @src: The source file
+  * @n: The number of terms in src
+  * Return: The copied characters
+  */
 char *_strncat(char *dest, char *src, int n)
 {
-	int size = 0;
-	int dest_len = 0;
 	int i = 0;
 
-	while (dest[size] != '\0')
+	i = 0;
+	while (i < n && src[i] != '\0')
 	{
-		size++;
-		dest++;
-	}
-
-	while (dest[dest_len] != '\0')
-	{
-		dest_len++;
-	}
-
-	while (i < n && src[i] != '\0' && dest_len < (size - 1))
-	{
-		dest[dest_len] = src[i];
-		dest_len++;
+		dest[i] = src[i];
 		i++;
 	}
-
-	dest[dest_len] = '\0';
-
+	while (i < n)
+	{
+		dest[i] = '\0';
+		i++;
+	}
 	return (dest);
 }
+
+
 

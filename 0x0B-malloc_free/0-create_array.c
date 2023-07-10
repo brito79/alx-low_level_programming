@@ -24,8 +24,8 @@ char *create_array(unsigned int size, char c)
 			return (0);
 		}
 		i++;
-		s[i] = c;
 	}
+	s[0] = c;
 	return (s);
 }
 

@@ -15,9 +15,7 @@ unsigned int i = 0;
 
 newnode = malloc(sizeof(list_t));
 if (newnode == NULL)
-{
 return (NULL);
-}
 
 newnode->str = strdup(str);
 if (newnode->str == NULL)
@@ -25,8 +23,14 @@ if (newnode->str == NULL)
 free(newnode);
 return (NULL);
 }
-
 newnode->len = 0;
+
+while (str[i] != '\0')
+{
+i++;
+newnode->len++;
+}
+
 newnode->next = NULL;
 
 if (*head == NULL)
@@ -36,10 +40,8 @@ return (newnode);
 }
 
 temp = *head;
-
 while (temp->next != NULL)
 {
-i++;
 temp = temp->next;
 }
 

@@ -8,9 +8,7 @@
 size_t print_listint(const listint_t *h)
 {
 	unsigned int num_of_terms = 0;
-	listint_t const *temp;
-
-	temp = h;
+	const listint_t *temp = h;
 
 	while (temp != NULL)
 	{

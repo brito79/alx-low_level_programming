@@ -9,7 +9,7 @@ listint_t *reverse_listint(listint_t **head)
 {
 	listint_t *curnode, *prevnode, *nextnode;
 
-	prevnode = 0;
+	prevnode = NULL;
 
 	curnode = nextnode = *head;
 

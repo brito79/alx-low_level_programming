@@ -8,7 +8,7 @@
 size_t print_listint(const listint_t *h)
 {
 	unsigned int num_of_terms = 0;
-	struct listint_s const *temp = NULL;
+	listint_t const *temp;
 
 	temp = h;
 

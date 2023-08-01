@@ -7,13 +7,12 @@
   */
 size_t print_listint(const listint_t *h)
 {
-	unsigned int num_of_terms = 0;
-	const listint_t *temp = h;
+	size_t num_of_terms = 0;
 
-	while (temp != NULL)
+	while (h)
 	{
-		printf("%d\n", temp->n);
-		temp = temp->next;
+		printf("%d\n", h->n);
+		h = h->next;
 		num_of_terms++;
 	}
 	return (num_of_terms);

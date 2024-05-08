@@ -22,7 +22,7 @@ int linear_search(int *array, size_t size, int value)
 
 		if (array[index] == value)
 		{
-			return (array[index]);
+			return (index);
 		}
 	}
 	return (-1);
